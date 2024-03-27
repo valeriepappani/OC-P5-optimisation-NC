@@ -289,8 +289,8 @@ input[type="submit"] {
 	margin-top: 70px;
 }
 
-.footer h5 {
-	font-size: 1.5rem;
+.footer h3 {
+	font-size: 1.5rem !important;
 }
 
 .footer .name {
