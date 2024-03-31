@@ -8,20 +8,18 @@ BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
-# <FilesMatch "\.(ico|jpe?g|png|webp|gif|swf|css|gz)$">
-# Header set Cache-Control "max-age=2592000, public"
-# </FilesMatch>
-<filesMatch « .(jpg|css|png|gif|js)$ »>
-Header set Cache-Control « max-age=2628000, public »
+<filesMatch "\.(ico|jpe?g|png|webp|gif|swf|css|gz)$ ">
+Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
-<FilesMatch "\.(js)$">
+<FilesMatch "\.(js)$ ">
 Header set Cache-Control "max-age=2592000, private"
 </FilesMatch>
-<filesMatch "\.(html|htm)$">
+<filesMatch "\.(html|htm)$ ">
 Header set Cache-Control "max-age=86400, public"
 </filesMatch>
 # Enleve le cache pour les ressources dynamiques
-<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$ ">
 Header unset Cache-Control
 </FilesMatch>
 </IfModule>
