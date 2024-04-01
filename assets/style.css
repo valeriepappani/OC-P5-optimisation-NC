@@ -91,9 +91,9 @@ body {
 
 .about-me__introduction {
 	font-family: 'Spectral';
-	font-weight: 800;
-	font-style: italic;
-	width: 80%;
+    font-weight: 800;
+    font-style: italic;
+    width: 60%;
 }
 
 .about-me__introduction p {
@@ -114,11 +114,9 @@ body {
 .gallery .nav {
 	justify-content: center;
 }
-
 .nav-item {
-	cursor: pointer;
+	cursor:pointer;
 }
-
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
 	color: #fff;
@@ -289,8 +287,8 @@ input[type="submit"] {
 	margin-top: 70px;
 }
 
-.footer h3 {
-	font-size: 1.5rem !important;
+.footer h5 {
+	font-size: 1.5rem;
 }
 
 .footer .name {
@@ -432,5 +430,13 @@ input[type="submit"] {
 
 	.picture {
 		width: 80%;
+	}
+
+	.quote__text {
+		font-size: 1.6rem;
+	}
+	.footer {
+		flex-direction: column;
+		text-align: center;
 	}
 }
